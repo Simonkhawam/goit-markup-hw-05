@@ -326,6 +326,10 @@ ul {
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .button button-one__all {
@@ -929,4 +933,43 @@ hr {
 .hover-btn:focus {
   text-decoration: none;
   cursor: pointer;
+}
+
+.link-prtofolio {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4 0, 0.2, 1);
+}
+.link-prtofolio:hover,
+.link-prtofolio:focus {
+  transform: translateY(0%);
+}
+.link-prtofolio:hover .overlay-text,
+.link-prtofolio:focus .overlay-test {
+  transform: translateY(0%);
+  background-color: #2196f3;
+}
+.overlay-p {
+  position: relative;
+  overflow: hidden;
+}
+.overlay-text {
+  position: absolute;
+
+  color: #fff;
+  padding: 20px;
+  background: #2196f3e5;
+  width: 100%;
+  height: 294px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: var(--text-font-family);
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.scroll {
+  position: relative;
 }
