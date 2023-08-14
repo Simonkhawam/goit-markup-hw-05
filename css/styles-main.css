@@ -496,6 +496,7 @@ div {
   width: 200px;
   height: 50px;
   flex-shrink: 0;
+  cursor: pointer;
   border-radius: 4px;
   color: #fff;
   background: #2196f3;
@@ -774,28 +775,24 @@ hr {
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  overflow: auto; /* Enable scroll if needed */
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   width: 528px;
   height: 581px;
   flex-shrink: 0;
   top: 50px;
   left: 29%;
   border-radius: 4px;
-  background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   transition: transform var(--transition);
+  pointer-events: auto;
 }
 
 /* Modal Content */
 .modal-content {
-  background-color: white;
+  background-color: #fff;
   margin: auto;
   padding: 9px;
   border: none;
