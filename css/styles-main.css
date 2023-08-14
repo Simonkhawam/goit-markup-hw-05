@@ -775,12 +775,14 @@ hr {
 }
 
 .modal {
+  display: none;
   position: fixed;
   z-index: 1;
   padding-top: 100px;
   width: 528px;
   height: 581px;
   flex-shrink: 0;
+  overflow: auto;
   top: 50px;
   left: 29%;
   border-radius: 4px;
